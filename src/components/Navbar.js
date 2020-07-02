@@ -33,11 +33,6 @@ export default function Navbar() {
 							<p className="navtext">Solutions</p>
 						</Link>
 					</div>
-					<div className="row mx-3" >
-						<Link to="/demos" style={{ textDecoration: "none" }}>
-							<p className="navtext">Demos</p>
-						</Link>
-					</div>
 					
 			
 

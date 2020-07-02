@@ -1,0 +1,24 @@
+{
+  "null": {
+    "src": "",
+    "title": "",
+    "description": ""
+  },
+
+  "molecules": {
+    "src": "/Gifs/Molecules.gif",
+    "title": "Molecular Models",
+    "description": "This demo attempts to solve one of the largest challenges for students new to chemistry: molecular geometry. Students are able to investigate the shapes of various similar molecules by expanding and rotating AR models."
+  },
+  "solarSystem": {
+    "src": "/Gifs/SolarSystem.gif",
+    "title": "Solar System",
+    "description": "Experience the solar system like never before! With this animation, students can understand how the planets orbit around the sun in an elliptical shape. Students also get an intuitive sense of how the length of a planetary year is correlated to the distance from the sun."
+  },
+  "momentumSpinner": {
+    "src": "/Gifs/MomentumSpinner.gif",
+    "title": "Conservation of Angular Momentum",
+    "description": "Understand the conservation of angular momentum in a whole new way! This activity allows students to adjust the \"Distance\" slider, changing the angular speed of a spinner. As the distance decreases, the spinner speeds up."
+  }
+
+}

@@ -2,6 +2,12 @@
 @import "https://fonts.googleapis.com/css2?family=Kanit:wght@500";
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+:root {
+    --dark-blue: #05386B;
+    --off-white: #EDF5E1;
+    --turquoise: #379683;
+}
+
 .navbar {
     color: #05386B;
     height: 15vmin;
@@ -255,4 +261,14 @@ button {
     100%{
         transform: rotate(360deg);
     }
+}
+
+
+.dropdownItem{
+    color: var(--dark-blue);
+    font-size: 2vmin;
+}
+.dropdownItem:focus{
+    background: none;
+    color: var(--dark-blue);
 }

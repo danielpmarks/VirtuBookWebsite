@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Book from '../res/open_book_filled.png';
 import Cell from '../res/Cell.png';
@@ -10,6 +10,10 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import "../../node_modules/animate.css/animate.min.css";
 
 export default function About() {
+
+    
+
+
     const bookText = {
         position: "absolute",
         color: "white",

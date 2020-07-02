@@ -1,5 +1,5 @@
 import React from 'react';
-import Molecules from '../res/Molecules.gif'
+import ClearIcon from '@material-ui/icons/Clear';
 
 const darkBlue = "#05386B";
 const offWhite = "#EDF5E1";
@@ -16,7 +16,8 @@ export default function (props) {
             top: "15%",
             backgroundColor: offWhite,
             borderRadius: "3vmin",
-            border: "2px solid black"
+            border: "5px solid black",
+            visibility: props.visible ? "visible" : "hidden"
         },
 
         text: {
@@ -30,24 +31,32 @@ export default function (props) {
                 fontSize: '3vmin',
                 textAlign: "left"
             }
+        },
+
+        clear: {
+            position: "absolute",
+            background: "none",
+            color: darkBlue,
+            right: "5%",
+            top: "5%"
         }
     }
 
     return (
         <div className="d-flex px-3" style={style.container}>
-            <div className="d-flex" style={{position: "relative", width: "100%", textAlign:"center"}}>
+     
+            <div className="d-flex" style={{ position: "relative", width: "100%", textAlign: "center" }}>
                 <div className="col-4">
                     <div className='row justify-content-center align-items-center' style={{height: "100%"}}>
-                        <img style={{maxWidth: "70%"}} src={Molecules} />
+                        <img style={{ maxWidth: "70%" }} src={props.demo.src} />
                         </div>
                 </div>
                 <div className='col-8' >
-                    <div className='row align-items-center' style={{height: "100%"}}>
+                    <button style={style.clear} onClick={props.close}><ClearIcon style={{fontSize: "5vmin"}}/></button>
+                    <div className='row align-items-center' style={{ height: "100%" }}>
                         <div className='col'>
-                        <h1 style={style.text.header}>Molecular Models</h1>
-                    <p style={style.text.p}> This demo attempts to solve one of the largest challenges
-                    for students new to chemistry: molecular geometry. Students are able to investigate
-                        the shapes of various similar molecules by expanding and rotating AR models.</p>
+                            <h1 style={style.text.header}>{props.demo.title}</h1>
+                            <p style={style.text.p}>{props.demo.description}</p>
                         </div>
                         </div>
                     </div>

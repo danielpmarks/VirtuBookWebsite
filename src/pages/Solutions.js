@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
+import Demo from '../components/Demo';
+import Demos from '../res/Demos.json';
+
 import Atom from '../res/Atom.png';
 import PendulumBase from '../res/PendulumStand.png';
 import PendulumBall from '../res/PendulumBall.png';
 
-import Icon from "@material-ui/core/Icon";
+
+import { Dropdown } from 'react-bootstrap';
+
 import SettingsIcon from '@material-ui/icons/Settings';
 
 const darkBlue = "#05386B";
@@ -16,7 +21,9 @@ export default function Solutions() {
 	const [pane2, setPane2] = useState(false);
 	const [pane3, setPane3] = useState(false);
 
-	
+	const [demoOpen, setDemoOpen] = useState(false);
+	const [demo, setDemo] = useState("null");
+
 
 	const style = {
 		header: {
@@ -139,8 +146,7 @@ export default function Solutions() {
 			borderBottom: pane3 ? "none" : "5px solid black",
 			borderLeft: "none",
 			color: offWhite
-		}
-
+		},
 	}
 
 	const openModels = () => {
@@ -161,10 +167,23 @@ export default function Solutions() {
 		setPane3(true);
 	}
 
+	const openDemo = (demo) => {
+		setDemoOpen(true);
+		setDemo(demo);
+	}
+
+	const closeDemo = () => {
+		setDemoOpen(false);
+		setDemo("null");
+	}
+
 	return (
 		<div className="App" style={{paddingBottom: "10vh"}}>
 			<Navbar />
-			<h1 className="animate__animated animate__flipInX"style={style.header.line1}>REPRESENTING SCIENCE</h1>
+
+			<Demo demo={Demos[demo]} visible={demoOpen} close={closeDemo}/>
+
+			<h1 className="animate__animated animate__flipInX" style={style.header.line1}>PRESENTING SCIENCE</h1>
 			<h1 className="animate__animated animate__zoomInDown" style={style.header.line2}>DYNAMICALLY</h1>
 			<div className="d-flex justify-content-center animate__animated animate__slideInUp" style={style.container}>
 				<div style={style.border} />
@@ -201,8 +220,15 @@ export default function Solutions() {
 									<li>Select and investigate specific representative features</li>
 									<li>Learn more from responsive captions and labels</li>
 								</ul>
-							
-							<button style={{fontSize: "2vw", backgroundColor: offWhite, color: darkBlue, padding: "0.5vw 1vw 0.5vw 1vw"}}>See demos</button>
+								<Dropdown>
+									<Dropdown.Toggle variant='success' id='models' style={{backgroundColor: offWhite, border: "none", color: darkBlue, fontSize: '3vmin'}}>
+										Model demos
+										</Dropdown.Toggle>
+
+									<Dropdown.Menu>
+										<Dropdown.Item className='dropdownItem' as="button" onClick={() => openDemo("molecules")}>Molecular Geometry</Dropdown.Item>
+										</Dropdown.Menu>
+								</Dropdown>
 							</h3>
 								</div>
 						</div>
@@ -228,7 +254,15 @@ export default function Solutions() {
 									<li>Show accelerated time frames unable to be viewed in the real world</li>
 								</ul>
 
-								<button style={{ fontSize: "2vw", backgroundColor: darkBlue, color: offWhite, padding: "0.5vw 1vw 0.5vw 1vw" }}>See demos</button>
+								<Dropdown>
+									<Dropdown.Toggle variant='success' id='models' style={{ backgroundColor: darkBlue, border: "none", color: offWhite, fontSize: '3vmin' }}>
+										Animation demos
+										</Dropdown.Toggle>
+
+									<Dropdown.Menu>
+										<Dropdown.Item className='dropdownItem' as="button" onClick={() => openDemo("solarSystem")}>Solar System</Dropdown.Item>
+									</Dropdown.Menu>
+								</Dropdown>
 							</h3>
 						</div>
 					</div>
@@ -252,7 +286,15 @@ export default function Solutions() {
 									<li>Get real-time data about activites as they occur</li>
 								</ul>
 
-								<button style={{ fontSize: "2vw", backgroundColor: offWhite, color: turquoise, padding: "0.5vw 1vw 0.5vw 1vw" }}>See demos</button>
+								<Dropdown>
+									<Dropdown.Toggle variant='success' id='models' style={{ backgroundColor: darkBlue, border: "none", color: offWhite, fontSize: '3vmin' }}>
+										Activity demos
+										</Dropdown.Toggle>
+
+									<Dropdown.Menu>
+										<Dropdown.Item className='dropdownItem' as="button" onClick={() => openDemo("momentumSpinner")}>Momentum Spinner</Dropdown.Item>
+									</Dropdown.Menu>
+								</Dropdown>
 							</h3>
 						</div>
 						<div className='col-4' style={{ height: "60%" }}>
