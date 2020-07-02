@@ -1,0 +1,258 @@
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+@import "https://fonts.googleapis.com/css2?family=Kanit:wght@500";
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.navbar {
+    color: #05386B;
+    height: 15vmin;
+    font-family: 'Kanit';
+    position: fixed;
+    z-index: 2;
+}
+
+.books {
+    width: 75vmin;
+}
+
+.enlarge {
+    animation: enlarge 0.75s;
+    animation-delay: 0.75s;
+}
+
+.slideIn {
+    animation: slideIn 0.5s;
+}
+
+.zoomIn {
+    animation: zoomIn 0.5s;
+}
+
+.thump {
+    animation: fallIn 0.1s;
+    animation-timing-function: linear;
+}
+
+.rotateClock {
+    animation: rotateClock 2s linear infinite;
+}
+.rotateCounter {
+    animation: rotateCounter 3s linear infinite;
+}
+
+@keyframes rotateClock {
+    25%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateCounter {
+    25% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes fallIn {
+    0% {
+        transform: translateY(-10vh);
+    }
+}
+
+@keyframes slideIn{
+    0% {
+        transform: translateY(100vh)
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes enlarge{
+
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        visibility: visible;
+        transform: scale(1);
+    }
+}
+
+
+.logoText {
+    font-size: 5vmin;
+    margin-left: 2vmin;
+    color: #05386B;
+    align-self: center;
+}
+.logoText:hover {
+    color: #05386B;
+}
+
+.navtext {
+    color: #05386B;
+    font-size: 2.5vmin;
+}
+    .navtext:hover {
+        text-decoration: underline;
+    }
+
+
+.App {
+    background-image: url('./res/BackgroundSmall.png');
+    background-repeat: repeat;
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #EDF5E1;
+    
+    font-family: 'Kanit';
+    font-weight: 800;
+}
+
+
+button {
+    font-family: 'Kanit';
+    background-color: #05386B;
+    border: none;
+    border-radius: 3vmin;
+    color: white;
+    padding: 2vmin 2vmin 2vmin 2vmin;
+    
+}
+    button:hover {
+        background-color: #0a73db;
+    }
+    button:focus {
+        outline:none;
+    }
+
+
+    .floatIn {
+        animation: floatIn 1s forwards;
+    }
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30vh) scale(0.5);
+    } 100% {
+          opacity: 1;
+      }
+}
+
+.swinging {
+    animation: swinging 1s infinite ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes swinging {
+    0%{
+        transform: rotate(-30deg);
+        transform-origin: 50% 5%;
+    }
+    100% {
+        transform: rotate(30deg);
+        transform-origin: 50% 5%;
+    }
+}
+
+.slider1{
+    animation:  slider1 3s ease-in-out infinite;
+}
+
+.slider2{
+    animation: slider2 4s ease-in-out infinite;
+}
+
+.slider3 {
+    animation: slider1 5s ease-in-out reverse infinite;
+    animation-delay: 1s;
+}
+
+@keyframes slider1 {
+    0% {
+        transform: translateX(-7vw);
+    }
+    35% {
+        transform: translateX(0);
+    }
+    65% {
+        transform: translateX(7vw);
+    }
+    100% {
+        transform: translateX(-7vw);
+    }
+}
+
+@keyframes slider2 {
+    0% {
+        transform: translateX(-3vw);
+    }
+
+    25% {
+        transform: translateX(-7vw);
+    }
+
+    50% {
+        transform: translateX(3vw);
+    }
+
+    75% {
+        transform: translateX(7vw);
+    }
+
+    100%{
+        transform: translateX(-3vw);
+    }
+}
+
+.gearSpin{ 
+    animation: gearSpin 5s ease-in-out infinite;
+}
+
+@keyframes gearSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(90deg);
+    }
+    40% {
+        transform: rotate(-45deg);
+    }
+    80% {
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.spin {
+    animation: spin 8s linear infinite;
+}
+
+@keyframes spin{
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
