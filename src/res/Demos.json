@@ -19,6 +19,11 @@
     "src": "/Gifs/MomentumSpinner.gif",
     "title": "Conservation of Angular Momentum",
     "description": "Understand the conservation of angular momentum in a whole new way! This activity allows students to adjust the \"Distance\" slider, changing the angular speed of a spinner. As the distance decreases, the spinner speeds up."
+  },
+  "oscillator": {
+    "src": "/Gifs/Oscillator.gif",
+    "title": "Harmonic Oscillator",
+    "description": "This activity connects a classic harmonic oscillator example with inciteful information about the underlying physics. With graphs displaying instantanious potential and kinetic energy combined with real-time velocity and acceleration vectors, students can directly see the correlation of spring constant with energy and how dampening can effect effeciency."
   }
 
 }

@@ -293,6 +293,8 @@ export default function Solutions() {
 
 									<Dropdown.Menu>
 										<Dropdown.Item className='dropdownItem' as="button" onClick={() => openDemo("momentumSpinner")}>Momentum Spinner</Dropdown.Item>
+										<Dropdown.Item className='dropdownItem' as="button" onClick={() => openDemo("oscillator")}>Harmonic Oscillator</Dropdown.Item>
+
 									</Dropdown.Menu>
 								</Dropdown>
 							</h3>
