@@ -6,22 +6,22 @@
   },
 
   "molecules": {
-    "src": "/Gifs/Molecules.gif",
+    "src": "https://giphy.com/embed/WTdeZW3sloKYbb37hS",
     "title": "Molecular Models",
     "description": "This demo attempts to solve one of the largest challenges for students new to chemistry: molecular geometry. Students are able to investigate the shapes of various similar molecules by expanding and rotating AR models."
   },
   "solarSystem": {
-    "src": "/Gifs/SolarSystem.gif",
+    "src" : "https://giphy.com/embed/MczGp2lFg8ahkQtAgv",
     "title": "Solar System",
     "description": "Experience the solar system like never before! With this animation, students can understand how the planets orbit around the sun in an elliptical shape. Students also get an intuitive sense of how the length of a planetary year is correlated to the distance from the sun."
   },
   "momentumSpinner": {
-    "src": "/Gifs/MomentumSpinner.gif",
+    "src": "https://giphy.com/embed/Q8HnEwNHuEWBtgNXgZ",
     "title": "Conservation of Angular Momentum",
     "description": "Understand the conservation of angular momentum in a whole new way! This activity allows students to adjust the \"Distance\" slider, changing the angular speed of a spinner. As the distance decreases, the spinner speeds up."
   },
   "oscillator": {
-    "src": "/Gifs/Oscillator.gif",
+    "src": "https://giphy.com/embed/Vapfd09J4uXSUoUfVI",
     "title": "Harmonic Oscillator",
     "description": "This activity connects a classic harmonic oscillator example with inciteful information about the underlying physics. With graphs displaying instantanious potential and kinetic energy combined with real-time velocity and acceleration vectors, students can directly see the correlation of spring constant with energy and how dampening can effect effeciency."
   }

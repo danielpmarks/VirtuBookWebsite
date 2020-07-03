@@ -48,7 +48,8 @@ export default function (props) {
             <div className="d-flex" style={{ position: "relative", width: "100%", textAlign: "center" }}>
                 <div className="col-4">
                     <div className='row justify-content-center align-items-center' style={{height: "100%"}}>
-                        <img style={{ maxWidth: "70%" }} src={props.demo.src} />
+                        <iframe src={props.demo.src} height="80%" width="80%" style={{ position: "absolute"}} frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        
                         </div>
                 </div>
                 <div className='col-8' >
