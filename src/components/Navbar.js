@@ -33,6 +33,11 @@ export default function Navbar() {
 							<p className="navtext">Solutions</p>
 						</Link>
 					</div>
+					<div className="row mx-3 justify-self-end" >
+						<a href="https://github.com/danielpmarks/VirtuBookSource">
+							<p className="navtext">GitHub</p>
+						</a>
+					</div>
 					
 			
 

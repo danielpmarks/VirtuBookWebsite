@@ -287,7 +287,7 @@ export default function Solutions() {
 								</ul>
 
 								<Dropdown>
-									<Dropdown.Toggle variant='success' id='models' style={{ backgroundColor: darkBlue, border: "none", color: offWhite, fontSize: '3vmin' }}>
+									<Dropdown.Toggle variant='success' id='models' style={{ backgroundColor: offWhite, border: "none", color: turquoise, fontSize: '3vmin' }}>
 										Activity demos
 										</Dropdown.Toggle>
 

@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import Navbar from '../components/Navbar';
 import Book from '../res/open_book_filled.png';
 import Cell from '../res/Cell.png';
@@ -53,7 +55,7 @@ export default function About() {
 
 
     return (
-        <div className="App" style={{fontFamily: 'Kanit', paddingBottom: "10vh"}}>
+        <div className="App" style={{fontFamily: 'Kanit', paddingBottom: "20vh"}}>
             <Navbar />
             <div className="d-flex justify-content-center align-items-center slideIn" style={bookCont}>
                 <img className="books" src={Book} ></img>
@@ -100,12 +102,12 @@ export default function About() {
                     </div>
 
                     <ScrollAnimation animateOnce={true} animateIn='animate__animated animate__jackInTheBox' duration="0.5s">
-                        <p style={subtitles}>VirtuBook brings scientific concepts out of the book using augmented reality</p>
+                        <p style={subtitles}>VirtuBook brings scientific concepts out of the book using mobile-based augmented reality</p>
                         
                     </ScrollAnimation>
                     <ScrollAnimation animateOnce={true} animateIn='animate__animated animate__fadeIn'>
                     <div className="row justify-content-center" style={{marginTop: "5vh", fontSize: "3vmin"}}>
-                        <button>See demos</button>
+                        <Link to='/solutions'><button>Explore Solutions</button></Link>
                         </div>
                         </ScrollAnimation>
                     </div>

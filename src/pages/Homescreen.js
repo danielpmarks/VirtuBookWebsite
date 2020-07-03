@@ -27,6 +27,13 @@ function Homescreen() {
        
     }
 
+    const vertical = {
+        graphic: {
+            position: "relative"
+
+        }
+    }
+
    
 
     const moleculeStyle = {
@@ -60,15 +67,19 @@ function Homescreen() {
         return (
             <div className="App">
                 <Navbar />
-                <div className="col-7" style={titleCont}>
-                    <h1 style={h1Style}>THE FUTURE OF SCIENCE EDUCATION IS HERE.</h1>
-                    <br /><button style={{ fontSize: "4vmin", marginTop: "2vh" }}>Explore Solutions</button></div>
-                <div className="row align-content-center" style={graphicContainer}>
-                    <div className="container">
-                        <img src={Molecule} style={moleculeStyle} /><br />
-                        <img src={Page} style={flatpageStyle} />
-                    </div>
+                <div className="row justify-content-center" style={{marginTop: "15%"}}>
+                    <div className="d-flex">
+                        <div className='col'>
+                        <div className='row'>
+                            <img src={Molecule} style={moleculeStyle} /><br /></div>
+                            <div className='row' >
+                    <img src={Page} style={flatpageStyle} /></div></div>
                 </div>
+            </div>
+                <div className="row justify-content-center" style={{ padding: "5% 5% 0 5%", textAlign: 'center' }}>
+                    <h1 style={h1Style}>THE FUTURE OF SCIENCE EDUCATION IS HERE.</h1>
+                    <br /><Link to='/solutions'><button style={{ fontSize: "4vmin", marginTop: "2vh" }}>Explore Solutions</button></Link></div>
+                
             </div>
             );
     }
