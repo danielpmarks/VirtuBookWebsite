@@ -24,6 +24,11 @@
     "src": "https://giphy.com/embed/Vapfd09J4uXSUoUfVI",
     "title": "Harmonic Oscillator",
     "description": "This activity connects a classic harmonic oscillator example with inciteful information about the underlying physics. With graphs displaying instantanious potential and kinetic energy combined with real-time velocity and acceleration vectors, students can directly see the correlation of spring constant with energy and how dampening can effect effeciency."
+  },
+  "pendulum": {
+    "src": "https://giphy.com/embed/iezJUnliNYhlv4N4GZ",
+    "title": "Pendulum",
+    "description":  "The period of a pendulum swinging is based solely on the length of the string and the force of gravity. With this demo, students can directly see this correlation by adjusting the two physical quantities and observing the result."
   }
 
 }
