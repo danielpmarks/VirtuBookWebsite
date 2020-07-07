@@ -178,7 +178,7 @@ export default function Solutions() {
 	}
 
 	return (
-		<div className="App" style={{paddingBottom: "10vh"}}>
+		<div className="App noScroll" style={{paddingBottom: "10vh"}} >
 			<Navbar />
 
 			<Demo demo={Demos[demo]} visible={demoOpen} close={closeDemo}/>

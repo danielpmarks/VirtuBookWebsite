@@ -48,7 +48,7 @@ export default function (props) {
             <div className="d-flex" style={{ position: "relative", width: "100%", textAlign: "center" }}>
                 <div className="col-4">
                     <div className='row justify-content-center align-items-center' style={{height: "100%"}}>
-                        <iframe src={props.demo.src} height="80%" width="80%" style={{ position: "absolute"}} frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <iframe src={props.demo.src} height="80%" scrolling="no" width="80%" style={{ position: "absolute" }} frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
                         
                         </div>
                 </div>

@@ -8,6 +8,14 @@
     --turquoise: #379683;
 }
 
+.noScroll::-webkit-scrollbar {
+    display: none;
+}
+
+iframe{
+    overflow: hidden;
+}
+
 .navbar {
     color: #05386B;
     height: 15vmin;
