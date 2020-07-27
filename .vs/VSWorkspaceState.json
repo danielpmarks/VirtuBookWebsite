@@ -3,9 +3,8 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\pages",
-    "\\src\\res"
+    "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\pages\\Solutions.js",
+  "SelectedNode": "\\src\\components\\Navbar.js",
   "PreviewInSolutionExplorer": false
 }
